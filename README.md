@@ -1,6 +1,6 @@
 # README
 
-A simple implementation of an agent which can make websearches through Github Copilot. Useful for adding context from the web to the chat window so Copilot can answer follow-up questions more effectively. An example use case would be asking Copilot to look up API docs of new libraries or packages it does not know of. Subsequently, you can ask in-depth questions related to that.
+A simple implementation of an agent which can make websearches through the Github Copilot extension. Useful for adding context from the web to the chat window so Copilot can answer follow-up questions more effectively. An example use case would be asking Copilot to look up API docs of new libraries or packages it does not know of. Subsequently, you can ask in-depth questions related to that.
 
 ![demo](images/demo.png)
 
