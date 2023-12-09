@@ -1,16 +1,12 @@
 # README
 
-This is the README for your extension "t". After writing up a brief description, we recommend including the following sections.
+A simple implementation of an agent which can make websearches through Github Copilot. Useful for adding context from the web to the chat window so Copilot can answer follow-up questions more effectively. An example use case would be asking Copilot to look up API docs of new libraries or packages it does not know of. Subsequently, you can ask in-depth questions related to that.
 
-## Features
+![demo](images/demo.png)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Underlying process is as follows. Websearches are performed via Google Search (SerpApi). 
+Subsequently, the HTML of the top links are vectorized and stored in-memory. Then semantic search is used to find the most relevant chunks within the page for your question/query. 
+Finally, a summary is generated from all the relevant chunks and returned to the user via the GC extension.
 
 ## Requirements
 
